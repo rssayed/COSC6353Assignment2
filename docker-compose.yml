@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+   react-service:
+      container_name: react-service
+      build: ./
+      ports:
+         - '8080:3000' # expose ports - HOST:CONTAINER
+      # environment:
+      #    - NODE_ENV=development
+      volumes:
+         - './:/app'
+        #  - '/usr/src/app/node_modules'
